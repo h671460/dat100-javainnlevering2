@@ -4,6 +4,10 @@ public class Tabeller {
 	*************
 // hei jeg er celine
 	// a)
+	
+	
+	
+	/// viktig test 
 	public static void skrivUt(int[] tabell) {
 
 		// TODO
