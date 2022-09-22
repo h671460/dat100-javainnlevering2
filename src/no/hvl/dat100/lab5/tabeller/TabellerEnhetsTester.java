@@ -12,7 +12,7 @@ class TabellerEnhetsTester {
 	
 	//hello1
 	///hei
-
+//hei
 	@Rule
 	public TestRule globalTimeout = Timeout.seconds(30);
 
