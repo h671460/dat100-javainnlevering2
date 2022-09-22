@@ -65,7 +65,7 @@ public class Tabeller {
 		s += tabell[tabell.length - 1];
 		String s2 = "[" + s + "]";
 		return s2;
-
+	
 		// TODO
 		throw new UnsupportedOperationException("tilStreng ikke implementert");
 
@@ -97,6 +97,8 @@ public class Tabeller {
 
 		}
 		return b;
+		
+	
 
 		// TODO
 		throw new UnsupportedOperationException("finnesTall ikke implementert");
