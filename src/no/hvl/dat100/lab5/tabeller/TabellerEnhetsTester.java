@@ -9,7 +9,10 @@ import org.junit.rules.TestRule;
 import org.junit.rules.Timeout;
 
 class TabellerEnhetsTester {
-
+	
+	
+	///hei
+//hei
 	@Rule
 	public TestRule globalTimeout = Timeout.seconds(30);
 

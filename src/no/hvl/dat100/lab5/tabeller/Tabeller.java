@@ -7,6 +7,9 @@ public class Tabeller {
 
 		// TODO
 		throw new UnsupportedOperationException("skrivUt ikke implementert");
+		
+		
+		
 
 	}
 
