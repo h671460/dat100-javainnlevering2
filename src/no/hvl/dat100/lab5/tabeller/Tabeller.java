@@ -45,7 +45,7 @@ public class Tabeller {
 		}
 
 		// TODO
-		throw new UnsupportedOperationException("skrivUt ikke implementert");
+	//	throw new UnsupportedOperationException("skrivUt ikke implementert");
 
 	}
 
@@ -67,9 +67,9 @@ public class Tabeller {
 		return s2;
 	
 		// TODO
-		throw new UnsupportedOperationException("tilStreng ikke implementert");
+		//throw new UnsupportedOperationException("tilStreng ikke implementert");
 
-	}
+	} 
 
 	// c)
 	public static int summer(int[] tabell) { // for løkke
@@ -82,7 +82,7 @@ public class Tabeller {
 		}
 		return sum;
 
-		throw new UnsupportedOperationException("summer ikke implementert");
+		//throw new UnsupportedOperationException("summer ikke implementert");
 	}
 
 	// d)
@@ -101,7 +101,7 @@ public class Tabeller {
 	
 
 		// TODO
-		throw new UnsupportedOperationException("finnesTall ikke implementert");
+		//throw new UnsupportedOperationException("finnesTall ikke implementert");
 	}
 
 	// e)
@@ -119,7 +119,7 @@ public class Tabeller {
 		return -1;
 
 		// TODO
-		throw new UnsupportedOperationException("posisjonTall ikke implementert");
+	//	throw new UnsupportedOperationException("posisjonTall ikke implementert");
 
 	}
 
@@ -137,7 +137,7 @@ public class Tabeller {
 		return ret;
 
 		// TODO
-		throw new UnsupportedOperationException("reverser ikke implementert");
+	//	throw new UnsupportedOperationException("reverser ikke implementert");
 
 	}
 
@@ -155,7 +155,7 @@ public class Tabeller {
 		return true;
 
 		// TODO
-		throw new UnsupportedOperationException("erSortert ikke implementert");
+		//throw new UnsupportedOperationException("erSortert ikke implementert");
 	}
 
 	// h)
@@ -176,6 +176,6 @@ public class Tabeller {
 		return ret;
 
 		// TODO
-		throw new UnsupportedOperationException("settSammen ikke implementert");
+		//throw new UnsupportedOperationException("settSammen ikke implementert");
 	}
 }
