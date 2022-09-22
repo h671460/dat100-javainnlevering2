@@ -1,6 +1,7 @@
 package no.hvl.dat100.lab5.tabeller;
 
 public class Tabeller {
+<<<<<<< HEAD
 	public static void main(String[] args) {
 
 		int[] tabell = { 42, 67, 89, };
@@ -36,6 +37,15 @@ public class Tabeller {
 
 	}
 
+=======
+	*************
+// hei jeg er celine
+	// a)
+	
+	
+	
+	/// viktig test 
+>>>>>>> branch 'master' of https://github.com/h671460/dat100-javainnlevering2.git
 	public static void skrivUt(int[] tabell) {
 
 		for (int i = 0; i < tabell.length; i++) {
