@@ -1,56 +1,51 @@
 package no.hvl.dat100.lab5.tabeller;
 
-public class Tabeller {public static void main(String[] args) {
+public class Tabeller {
+	public static void main(String[] args) {
 
-	int[] tabell = { 42, 67, 89, };
+		int[] tabell = { 42, 67, 89, };
 
-	System.out.println(tilStreng(tabell));
-	skrivUt(tabell);
-	System.out.println(summerFor(tabell));
-	System.out.println(summerWhile(tabell));
-	System.out.println(summerUtvidetFor(tabell));
+		System.out.println(tilStreng(tabell));
+		skrivUt(tabell);
+		System.out.println(summer(tabell));
+		
 
-	int tall = 67;
+		int tall = 67;
 
-	boolean svar = finnesTall(tabell, tall);
+		boolean svar = finnesTall(tabell, tall);
 
-	String tekst = "";
-	if (svar == false) {
-		tekst = "Nei";
-	} else {
-		tekst = "Ja ";
+		String tekst = "";
+		if (svar == false) {
+			tekst = "Nei";
+		} else {
+			tekst = "Ja ";
+		}
+
+		System.out.println("Finnes tall: " + tekst);
+
+		String postall = "" + posisjonTall(tabell, tall);
+
+		System.out.println(
+				"Tallet har posisjon " + postall + "  \n negativ verdi betyr at tallet ikke er tilstede i tabellen ");
+
+		System.out.println("Tabell reversert:  " + tilStreng(reverser(tabell)));
+
+		System.out.println("Er sortert:  " + erSortert(tabell));
+
+		System.out.println("Sett sammen to tabeller metode; " + tilStreng(settSammen(tabell, reverser(tabell))));
+
 	}
 
-	System.out.println("Finnes tall: " + tekst);
-
-	String postall = "" + posisjonTall(tabell, tall);
-
-	System.out.println(
-			"Tallet har posisjon " + postall + "  \n negativ verdi betyr at tallet ikke er tilstede i tabellen ");
-
-	System.out.println("Tabell reversert:  " + tilStreng(reverser(tabell)));
-
-	System.out.println("Er sortert:  " + erSortert(tabell));
-
-	System.out.println("Sett sammen to tabeller metode; " + tilStreng(settSammen(tabell, reverser(tabell))));
-
-}
-
 	public static void skrivUt(int[] tabell) {
-		
+
 		for (int i = 0; i < tabell.length; i++) {
 
 			System.out.println(tabell[i]);
 
 		}
 
-	
-
 		// TODO
 		throw new UnsupportedOperationException("skrivUt ikke implementert");
-		
-		
-		
 
 	}
 
@@ -71,10 +66,9 @@ public class Tabeller {public static void main(String[] args) {
 		String s2 = "[" + s + "]";
 		return s2;
 
-	
 		// TODO
 		throw new UnsupportedOperationException("tilStreng ikke implementert");
-		
+
 	}
 
 	// c)
@@ -88,7 +82,6 @@ public class Tabeller {public static void main(String[] args) {
 		}
 		return sum;
 
-	
 		throw new UnsupportedOperationException("summer ikke implementert");
 	}
 
@@ -105,14 +98,13 @@ public class Tabeller {public static void main(String[] args) {
 		}
 		return b;
 
-
 		// TODO
 		throw new UnsupportedOperationException("finnesTall ikke implementert");
 	}
 
 	// e)
 	public static int posisjonTall(int[] tabell, int tall) {
-		
+
 		for (int i = 0; i < tabell.length; i++) {
 
 			if (tall == tabell[i]) {
@@ -131,7 +123,7 @@ public class Tabeller {public static void main(String[] args) {
 
 	// f)
 	public static int[] reverser(int[] tabell) {
-		
+
 		int[] ret = new int[tabell.length];
 
 		for (int i = 0; i < tabell.length; i++) {
@@ -142,10 +134,9 @@ public class Tabeller {public static void main(String[] args) {
 
 		return ret;
 
-
 		// TODO
 		throw new UnsupportedOperationException("reverser ikke implementert");
-		
+
 	}
 
 	// g)
@@ -167,7 +158,7 @@ public class Tabeller {public static void main(String[] args) {
 
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
-		
+
 		int[] ret = new int[tabell1.length + tabell2.length];
 		int i = 0;
 
