@@ -3,6 +3,10 @@ package no.hvl.dat100.lab5.tabeller;
 public class Tabeller {
 // hei jeg er celine
 	// a)
+	
+	
+	
+	/// viktig test 
 	public static void skrivUt(int[] tabell) {
 
 		// TODO
