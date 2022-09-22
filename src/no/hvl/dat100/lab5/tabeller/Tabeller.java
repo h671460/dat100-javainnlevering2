@@ -1,7 +1,7 @@
 package no.hvl.dat100.lab5.tabeller;
 
 public class Tabeller {
-<<<<<<< HEAD
+
 	public static void main(String[] args) {
 
 		int[] tabell = { 42, 67, 89, };
@@ -9,7 +9,6 @@ public class Tabeller {
 		System.out.println(tilStreng(tabell));
 		skrivUt(tabell);
 		System.out.println(summer(tabell));
-		
 
 		int tall = 67;
 
@@ -37,15 +36,6 @@ public class Tabeller {
 
 	}
 
-=======
-	*************
-// hei jeg er celine
-	// a)
-	
-	
-	
-	/// viktig test 
->>>>>>> branch 'master' of https://github.com/h671460/dat100-javainnlevering2.git
 	public static void skrivUt(int[] tabell) {
 
 		for (int i = 0; i < tabell.length; i++) {
@@ -55,7 +45,7 @@ public class Tabeller {
 		}
 
 		// TODO
-	//	throw new UnsupportedOperationException("skrivUt ikke implementert");
+		// throw new UnsupportedOperationException("skrivUt ikke implementert");
 
 	}
 
@@ -75,11 +65,11 @@ public class Tabeller {
 		s += tabell[tabell.length - 1];
 		String s2 = "[" + s + "]";
 		return s2;
-	
-		// TODO
-		//throw new UnsupportedOperationException("tilStreng ikke implementert");
 
-	} 
+		// TODO
+		// throw new UnsupportedOperationException("tilStreng ikke implementert");
+
+	}
 
 	// c)
 	public static int summer(int[] tabell) { // for løkke
@@ -92,7 +82,7 @@ public class Tabeller {
 		}
 		return sum;
 
-		//throw new UnsupportedOperationException("summer ikke implementert");
+		// throw new UnsupportedOperationException("summer ikke implementert");
 	}
 
 	// d)
@@ -107,11 +97,9 @@ public class Tabeller {
 
 		}
 		return b;
-		
-	
 
 		// TODO
-		//throw new UnsupportedOperationException("finnesTall ikke implementert");
+		// throw new UnsupportedOperationException("finnesTall ikke implementert");
 	}
 
 	// e)
@@ -129,7 +117,7 @@ public class Tabeller {
 		return -1;
 
 		// TODO
-	//	throw new UnsupportedOperationException("posisjonTall ikke implementert");
+		// throw new UnsupportedOperationException("posisjonTall ikke implementert");
 
 	}
 
@@ -147,7 +135,7 @@ public class Tabeller {
 		return ret;
 
 		// TODO
-	//	throw new UnsupportedOperationException("reverser ikke implementert");
+		// throw new UnsupportedOperationException("reverser ikke implementert");
 
 	}
 
@@ -165,7 +153,7 @@ public class Tabeller {
 		return true;
 
 		// TODO
-		//throw new UnsupportedOperationException("erSortert ikke implementert");
+		// throw new UnsupportedOperationException("erSortert ikke implementert");
 	}
 
 	// h)
@@ -186,6 +174,6 @@ public class Tabeller {
 		return ret;
 
 		// TODO
-		//throw new UnsupportedOperationException("settSammen ikke implementert");
+		// throw new UnsupportedOperationException("settSammen ikke implementert");
 	}
 }
