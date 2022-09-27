@@ -3,7 +3,12 @@ package no.hvl.dat100.lab6.matriser;
 public class Matriser {
 	public static void main(String[] args) {
 		int [][] matriseTab = { {1,2,3},{4,5,6}, {7,8,9} };
-	//System.out.println(skrivUt(matriseTab));	
+	
+	//a)Bruke metoden skrivUt til å skrive ut en todimensjonelltabell 
+	//ved bruk av utvidet forløkke
+		System.out.print("{");
+		skrivUt(matriseTab);
+		System.out.print("}");
 		
 	//c) bruke metode fra c for å skrive ut en ny matrise som er multiplisert med oppgitt tall:
 		System.out.println(skaler(2, matriseTab));
@@ -13,27 +18,19 @@ public class Matriser {
 		int[][]b= {{1,2,3},{3,2,1}};
 		System.out.println(erLik(a,b));
 }
-/*	public static void skrivUt(int[][] matrise) {
-		int [][] matriseTab = { {1,2,3},
-								{4,5,6},
-								{7,8,9} };
-
-	
-		for (int i =0; i<matriseTab.length; i++) 
-		for (int j= 0; j<tab[i].length; j++{
+	public static void skrivUt(int[][] matrise) {
+		
+		for (int [] i: matrise) 
+		for (int j: i) {
+			
+			System.out.print(j + ",");
+			
+			
 		}
-		System.out.println();
-		for (int i: rad1) 
-		for	(int j: rad2) 
-		for	(int h: rad3) {
-// a)Bruke metoden skrivUt til å skrive ut en todimensjonelltabell 
-//ved bruk av utvidet forløkke
-			System.out.println(i + "," + j + "," + h + ",");
-		}
-		throw new UnsupportedOperationException("skrivUt ikke implementert");
+		//throw new UnsupportedOperationException("skrivUt ikke implementert");
 	}
 
-	// b)
+/*	// b)
 	public static String tilStreng(int[][] matrise) {
 		String[] a = {"1 2 3 \n 4 5 6 \n 7 8 9 \n"};
 		int [][]matriseTab2 = { {1,2,3}, {4,5,6}, {7,8,9} };
