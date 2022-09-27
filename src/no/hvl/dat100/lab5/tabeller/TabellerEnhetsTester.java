@@ -10,9 +10,6 @@ import org.junit.rules.Timeout;
 
 class TabellerEnhetsTester {
 	
-	//hello1
-	///hei
-//hei
 	
 	
 	@Rule

@@ -17,6 +17,12 @@ public class Matriser {
 		int[][]a= {{1,2,3},{3,2,1}};
 		int[][]b= {{1,2,3},{3,2,1}};
 		System.out.println(erLik(a,b));
+		
+	
+		
+		//e) speile kvadratisk matrise
+		
+		System.out.println("\n" + tilStreng(speile((matriseTab))));
 }
 	// a)
 	public static void skrivUt(int[][] matrise) {
@@ -86,7 +92,21 @@ public class Matriser {
 		public static int[][] speile(int[][] matrise) {
 
 			// TODO
-			throw new UnsupportedOperationException("speile ikke implementert");
+			
+			int[][] speil = new int[matrise[0].length][matrise.length];
+			{
+
+				for (int i = 0; i < matrise[0].length; i++) {
+					for (int ii = 0; ii < matrise.length; ii++) {
+
+						speil[i][ii] = matrise[ii][i];
+
+					}
+				}
+			}
+
+			return speil;
+		//	throw new UnsupportedOperationException("speile ikke implementert");
 		
 		}
 
@@ -94,7 +114,7 @@ public class Matriser {
 		public static int[][] multipliser(int[][] a, int[][] b) {
 
 			// TODO
-			throw new UnsupportedOperationException("multipliser ikke implementert");
+		//	throw new UnsupportedOperationException("multipliser ikke implementert");
 		
 		}
 	}
