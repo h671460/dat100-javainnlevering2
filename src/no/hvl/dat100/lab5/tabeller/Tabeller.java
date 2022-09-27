@@ -35,7 +35,7 @@ public class Tabeller {
 		System.out.println("Sett sammen to tabeller metode; " + tilStreng(settSammen(tabell, reverser(tabell))));
 
 	}
-
+	//a)
 	public static void skrivUt(int[] tabell) {
 
 		for (int i = 0; i < tabell.length; i++) {
