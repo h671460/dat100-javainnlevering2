@@ -51,25 +51,17 @@ public class Tabeller {
 
 	// b)
 	public static String tilStreng(int[] tabell) {
-
-		// int[] tabell = new int[tabel.length];
-
-		String s = "";
-
-		for (int i = 0; i < tabell.length - 1; i++) {
-
-			s += tabell[i] + ",";
-
-		}
-
-		s += tabell[tabell.length - 1];
-		String s2 = "[" + s + "]";
-		return s2;
-
-		// TODO
-		// throw new UnsupportedOperationException("tilStreng ikke implementert");
-
-	}
+		String retVar = "[";
+		for (int i = 0; i < tabell.length; i ++) {
+			if(i < tabell.length-1) {
+			retVar += tabell[i] + ",";
+			}
+			else
+				retVar += tabell[i];
+				}
+	retVar += "]";
+	return retVar;
+}
 
 	// c)
 	public static int summer(int[] tabell) { // for løkke
@@ -141,20 +133,18 @@ public class Tabeller {
 
 	// g)
 	public static boolean erSortert(int[] tabell) {
-		int v = tabell[0];
-		for (int i = 1; i < tabell.length; i++) {
-
-			if (v > tabell[i]) {
-
+		int testVar = 0;
+		for (int i: tabell) {
+			if (testVar <= i) {
+				testVar = i;
+			}
+			else {
 				return false;
 			}
-			v = tabell[i];
 		}
-		return true;
+	return true;
+}
 
-		// TODO
-		// throw new UnsupportedOperationException("erSortert ikke implementert");
-	}
 
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
