@@ -18,80 +18,84 @@ public class Matriser {
 		int[][]b= {{1,2,3},{3,2,1}};
 		System.out.println(erLik(a,b));
 }
+	// a)
 	public static void skrivUt(int[][] matrise) {
-		
-		for (int [] i: matrise) 
-		for (int j: i) {
-			
-			System.out.print(j + ",");
-			
-			
+		String holdeVar = "";
+		for(int[] y: matrise) {
+			for(int i: y) {
+				holdeVar += i + " ";
+						}
+				holdeVar += "\n";	
 		}
-		//throw new UnsupportedOperationException("skrivUt ikke implementert");
+				System.out.println(holdeVar);		
 	}
 
-/*	// b)
+	// b)
 	public static String tilStreng(int[][] matrise) {
-		String[] a = {"1 2 3 \n 4 5 6 \n 7 8 9 \n"};
-		int [][]matriseTab2 = { {1,2,3}, {4,5,6}, {7,8,9} };
-		for(int i=0; i<matrise.length; i++) {
-			if (matrise[i] == matriseTab2[i]) 
-			{
-		return a;
-			}
+		String holdeVar = "";
+		for(int[] y: matrise) {
+			for(int i: y) {
+				holdeVar += i + " ";
+						}
+				holdeVar += "\n";	
 		}
-		
-	
-		
-		
-	
-		// TODO
-		throw new UnsupportedOperationException("tilStreng ikke implementert");
-		
+		return holdeVar;	
 	}
-*/
+		
+
 	// c)
-	public static int[][] skaler(int tall, int[][] matrise) {
-		int[][]nyMatrise=new int[matrise.length][];
-		for(int i=0; i<matrise.length; i++) {
-			nyMatrise[i] = matrise[i*tall];
-		}
-		return nyMatrise;
-		// TODO
-		//throw new UnsupportedOperationException("skaler ikke implementert");
-	
+		public static int[][] skaler(int tall, int[][] matrise) {
+			int[][] nyMatrise = new int[matrise.length][matrise[0].length];
+				for (int i = 0; i < matrise.length; i++ ) {
+					for (int y = 0; y < matrise[i].length; y++) {
+						nyMatrise[i][y] = matrise[i][y]*tall;
+					}
+				}
+				return nyMatrise;
+				// TODO
+				//throw new UnsupportedOperationException("skaler ikke implementert");
 	}
 
 	//d)
-	public static boolean erLik(int[][] mat1, int[][] mat2) {
-		boolean erLik = true;
-		
-		for(int i=0; i<mat1.length; i++)
-		for(int j=0; j<mat2.length; j++){
-			if (mat1[i] == mat2[j]){
-			erLik = false;
-			}
-		}
-		return erLik;
+		public static boolean erLik(int[][] a, int[][] b) {
+			//return a.equals(b); triviell løsning, ikke brukt pga. ulovlig(?)
+				
+			//Tester om listene er like i størrelse. 
+			if (a.length != b.length) {
+				return false;
+				}
+			else {
+				for (int i = 0; i <a.length; i++) {
+					if (a[i].length != b[i].length) {
+						return false;
+					}
+					else  {
+						//Tester om listene har likt innhold.
+						for (int y = 0; y < a.length; y++) {
+						if (a[i][y] != b[i][y]) {
+							return false;
+						}
+					}
+				}
+			 } 
+		 } 
+		return true;
+	}
 			
-		// TODO
-	/*	throw new UnsupportedOperationException("erLik ikke implementert");
-	}
-	
-	// e)
-	public static int[][] speile(int[][] matrise) {
+		// e)
+		public static int[][] speile(int[][] matrise) {
 
-		// TODO
-		throw new UnsupportedOperationException("speile ikke implementert");
-	
-	}
+			// TODO
+			throw new UnsupportedOperationException("speile ikke implementert");
+		
+		}
 
-	// f)
-	public static int[][] multipliser(int[][] a, int[][] b) {
+		// f)
+		public static int[][] multipliser(int[][] a, int[][] b) {
 
-		// TODO
-		throw new UnsupportedOperationException("multipliser ikke implementert");
-	*/
+			// TODO
+			throw new UnsupportedOperationException("multipliser ikke implementert");
+		
+		}
 	}
-}
 
