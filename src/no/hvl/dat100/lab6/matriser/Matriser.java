@@ -8,10 +8,12 @@ public class Matriser {
 	//ved bruk av utvidet forløkke
 		System.out.print("{");
 		skrivUt(matriseTab);
-		System.out.print("}");
+		System.out.print("} \n \n");
 		
 	//c) bruke metode fra c for å skrive ut en ny matrise som er multiplisert med oppgitt tall:
-		System.out.println(skaler(2, matriseTab));
+		
+		int[][] multimatrise = skaler(2, matriseTab);
+		skrivUt(multimatrise);
 	
 	//d) bruke metode fra d for å sjekk eom to matrise ved parameterne a og b er like:
 		int[][]a= {{1,2,3},{3,2,1}};
@@ -33,7 +35,7 @@ public class Matriser {
 						}
 				holdeVar += "\n";	
 		}
-				System.out.println(holdeVar);		
+				System.out.print(holdeVar);		
 	}
 
 	// b)
