@@ -6,9 +6,9 @@ public class Matriser {
 	
 	//a)Bruke metoden skrivUt til å skrive ut en todimensjonelltabell 
 	//ved bruk av utvidet forløkke
-		System.out.print("{");
+		//System.out.print("{");
 		skrivUt(matriseTab);
-		System.out.print("} \n \n");
+		System.out.print(" \n \n");
 		
 	//c) bruke metode fra c for å skrive ut en ny matrise som er multiplisert med oppgitt tall:
 		
